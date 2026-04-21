@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPEC月报 2026年4月</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&family=Playfair+Display:wght@700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0f0f0f; font-family:'Noto Sans SC',sans-serif; color:#e8e0d0;
+         min-height:100vh; display:flex; justify-content:center; align-items:flex-start; padding:20px; }
+  .card { width:100%; max-width:680px; background:#141414; border:1px solid #2a2a2a; border-radius:4px; overflow:hidden; }
+  .header { background:linear-gradient(135deg,#6b1a00 0%,#9c2b00 40%,#b83200 70%,#8b1e00 100%);
+            padding:28px 32px 24px; position:relative; overflow:hidden; }
+  .header::before { content:''; position:absolute; top:-30px; right:-30px; width:160px; height:160px;
+                    border-radius:50%; background:rgba(255,255,255,0.04); }
+  .header::after  { content:''; position:absolute; bottom:-20px; left:40px; width:100px; height:100px;
+                    border-radius:50%; background:rgba(255,255,255,0.03); }
+  .header-top { display:flex; align-items:center; gap:14px; margin-bottom:16px; }
+  .opec-logo { width:44px; height:44px; background:rgba(255,255,255,0.15); border-radius:50%;
+               display:flex; align-items:center; justify-content:center; font-size:11px;
+               font-weight:700; letter-spacing:0.5px; color:#fff; border:1.5px solid rgba(255,255,255,0.3); flex-shrink:0; }
+  .header-label { font-size:11px; letter-spacing:2px; text-transform:uppercase; color:rgba(255,200,150,0.8); font-weight:500; }
+  .header-title { font-family:'Playfair Display','Noto Serif SC',serif; font-size:28px; color:#fff; line-height:1.2; letter-spacing:0.5px; }
+  .header-subtitle { font-size:12px; color:rgba(255,200,150,0.7); margin-top:6px; letter-spacing:1px; }
+  .orb-hero { background:linear-gradient(to bottom,#1a0a00,#1c1410); padding:24px 32px;
+              border-bottom:1px solid #2a2a2a; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+  .orb-main { flex:1; }
+  .orb-label { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#888; margin-bottom:4px; }
+  .orb-value { font-family:'Playfair Display',serif; font-size:42px; color:#e8b86d; line-height:1; letter-spacing:-1px; }
+  .orb-unit { font-size:14px; color:#888; margin-left:4px; }
+  .orb-change { display:inline-flex; align-items:center; gap:4px; background:rgba(46,160,67,0.15);
+                border:1px solid rgba(46,160,67,0.3); color:#3fb950; font-size:12px;
+                padding:3px 10px; border-radius:20px; margin-top:8px; }
+  .orb-change.dn { background:rgba(248,81,73,0.15); border-color:rgba(248,81,73,0.3); color:#f85149; }
+  .orb-change::before { content:'▲'; font-size:9px; }
+  .orb-change.dn::before { content:'▼'; }
+  .price-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; flex-shrink:0; }
+  .price-item { text-align:right; }
+  .price-item-label { font-size:10px; color:#666; letter-spacing:1px; text-transform:uppercase; }
+  .price-item-value { font-size:18px; color:#c8a882; font-weight:600; margin-top:2px; }
+  .price-item-chg { font-size:11px; color:#3fb950; }
+  .price-item-chg.dn { color:#f85149; }
+  .section { padding:20px 32px; border-bottom:1px solid #1e1e1e; }
+  .section:last-child { border-bottom:none; }
+  .section-header { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+  .section-icon { width:28px; height:28px; border-radius:6px; display:flex; align-items:center;
+                  justify-content:center; font-size:14px; flex-shrink:0; }
+  .section-title { font-size:13px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:#a0907a; }
+  .section-body { font-size:14px; line-height:1.8; color:#c8bfb0; font-weight:300; }
+  .section-body strong { color:#e8d8b8; font-weight:500; }
+  .data-table { width:100%; border-collapse:collapse; margin-top:10px; font-size:13px; }
+  .data-table th { color:#666; font-weight:400; font-size:10px; letter-spacing:1.5px; text-transform:uppercase;
+                   padding:6px 8px; text-align:left; border-bottom:1px solid #222; }
+  .data-table td { padding:8px 8px; border-bottom:1px solid #1a1a1a; color:#c0b8a8; }
+  .data-table td:last-child { text-align:right; }
+  .data-table th:last-child { text-align:right; }
+  .up { color:#3fb950; } .dn { color:#f85149; } .neutral { color:#888; }
+  .stat-strip { display:flex; flex-direction:column; gap:1px; background:#1e1e1e; margin-top:12px; border-radius:6px; overflow:hidden; }
+  .stat-cell { background:#181818; padding:11px 16px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  .stat-cell-label { font-size:12px; color:#888; flex:1; }
+  .stat-cell-value { font-size:20px; font-weight:600; color:#e8c890; letter-spacing:-0.5px; white-space:nowrap; }
+  .stat-cell-unit { font-size:11px; color:#666; margin-left:4px; white-space:nowrap; }
+  .gdp-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:12px; }
+  .gdp-item { background:#181818; border:1px solid #222; border-radius:6px; padding:10px 8px; text-align:center; }
+  .gdp-country { font-size:10px; color:#666; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px; }
+  .gdp-value { font-size:18px; font-weight:600; color:#a8d4f0; }
+  .gdp-unit { font-size:10px; color:#555; margin-top:2px; }
+  .tanker-badge { display:inline-flex; align-items:center; gap:6px; background:rgba(230,150,50,0.1);
+                  border:1px solid rgba(230,150,50,0.25); color:#e6963c; font-size:11px;
+                  padding:3px 10px; border-radius:4px; margin:4px 4px 4px 0; }
+  .stock-bar-wrap { margin-top:12px; }
+  .stock-bar-label { display:flex; justify-content:space-between; font-size:11px; color:#666; margin-bottom:4px; }
+  .stock-bar-track { height:6px; background:#222; border-radius:3px; margin-bottom:10px; overflow:hidden; }
+  .stock-bar-fill { height:100%; border-radius:3px; background:linear-gradient(to right,#8b3a00,#e67e22); }
+  .footer { background:#0e0e0e; padding:16px 32px; display:flex; justify-content:space-between; align-items:center; }
+  .footer-meta { font-size:11px; color:#444; letter-spacing:0.5px; }
+  .footer-next { font-size:11px; color:#555; text-align:right; }
+  .footer-next a { color:#8b5e3c; text-decoration:none; }
+  .ic-price   { background:rgba(180,80,0,0.2); }
+  .ic-economy { background:rgba(30,100,160,0.2); }
+  .ic-demand  { background:rgba(40,140,80,0.2); }
+  .ic-supply  { background:rgba(120,40,160,0.2); }
+  .ic-product { background:rgba(160,130,0,0.2); }
+  .ic-tanker  { background:rgba(200,100,20,0.2); }
+  .ic-stock   { background:rgba(60,120,160,0.2); }
+  .ic-balance { background:rgba(160,60,60,0.2); }
+  @media(max-width:540px){
+    .orb-hero{flex-direction:column;align-items:flex-start;}
+    .price-grid{grid-template-columns:repeat(4,1fr);}
+    .price-item{text-align:left;}
+    .gdp-grid{grid-template-columns:repeat(4,1fr);}
+    .header-title{font-size:22px;} .orb-value{font-size:34px;}
+    .section{padding:18px 20px;} .header{padding:20px;} .footer{padding:14px 20px;}
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <div class="header-top">
+      <div class="opec-logo">OPEC</div>
+      <div><div class="header-label">Monthly Oil Market Report</div></div>
+    </div>
+    <div class="header-title">OPEC 月度石油<br>市场报告</div>
+    <div class="header-subtitle">2026年4月 &nbsp;·&nbsp; 2026-04-21 21:58 推送</div>
+  </div>
+  <div class="orb-hero">
+    <div class="orb-main">
+      <div class="orb-label">OPEC 参考篮价格 (ORB)</div>
+      <div><span class="orb-value">$48.46</span><span class="orb-unit">/桶</span></div>
+      <div class="orb-change">较上月 +48.46/桶</div>
+    </div>
+    <div class="price-grid">
+      <div class="price-item"><div class="price-item-label">布伦特</div><div class="price-item-value">$99.60</div><div class="price-item-chg">▲ +30.23</div></div><div class="price-item"><div class="price-item-label">WTI</div><div class="price-item-value">$91</div><div class="price-item-chg">▲ +26.48</div></div><div class="price-item"><div class="price-item-label">阿曼</div><div class="price-item-value">$56.14</div></div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon ic-price">🛢</div>
+      <div class="section-title">原油价格走势</div>
+    </div>
+    <div class="section-body">In March, the OPEC Reference Basket (ORB) value increased by $48.46/b, month-on-month (m-o-m), to average $116.36/b. The ICE Brent front-month contract increased by $30.23/b, m-o-m, to average $99.60/b, and the NYMEX WTI front-month contract increased by $26.48/b, m-o-m, to average $91/b. The GME Oman front-month contract increased by $56.14/b, m-o-m, to $124.56/b. The Brent–WTI front-month spread increased by $3.75/b, m-o-m, to average $8.60/b. The forward curves of all major crude futures benchmarks – ICE Brent, NYMEX WTI, and GME Oman – steepened sharply, and the calendar spreads between the nearest futures contracts moved into deeper backwardation. Hedge funds and other money managers turned increasingly bullish on oil, sharply increasing their net long positions amid supply disruptions and higher oil prices.</div>
+    <table class="data-table"><thead><tr><th>合约</th><th>上月均价</th><th>本月均价</th><th>月度变化</th></tr></thead><tbody><tr><td>OPEC篮价 (ORB)</td><td>$67.90</td><td>$116.36</td><td class="up">+48.46/b</td></tr><tr><td>ICE 布伦特</td><td>$69.37</td><td>$99.60</td><td class="up">+30.23/b</td></tr><tr><td>NYMEX WTI</td><td>$64.52</td><td>$91</td><td class="up">+26.48/b</td></tr><tr><td>GME 阿曼</td><td>—</td><td>$56.14</td><td class="neutral">—</td></tr></tbody></table>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon ic-economy">🌐</div>
+      <div class="section-title">世界经济</div>
+    </div>
+    <div class="section-body">The global economic growth forecasts remain unchanged from last month’s assessment at 3.1% for 2026 and 3.2% for 2027. The US economic growth forecasts remain at 2.2% for 2026 and 2.0% for 2027. In the Eurozone, the economic growth forecasts remain at 1.2% for both 2026 and 2027. Japan’s economic growth forecasts remain at 0.9% for both 2026 and 2027. The economic growth forecasts for China remain at 4.5% for both 2026 and 2027. India’s economic growth forecasts remain at 6.6% for 2026 and 6.5% for 2027. Brazil’s economic growth forecasts remain at 2.0% for 2026 and 2.2% for 2027. Russia’s economic growth forecasts remain at 1.3% for 2026 and 1.5% for 2027.</div>
+    <div class="gdp-grid"><div class="gdp-item"><div class="gdp-country">全球</div><div class="gdp-value" style="color:#a8d4f0">3.1%</div><div class="gdp-unit">2026F</div></div><div class="gdp-item"><div class="gdp-country">美国</div><div class="gdp-value" style="color:#a8d4f0">2.2%</div><div class="gdp-unit">2026F</div></div><div class="gdp-item"><div class="gdp-country">中国</div><div class="gdp-value" style="color:#a8d4f0">4.5%</div><div class="gdp-unit">2026F</div></div><div class="gdp-item"><div class="gdp-country">印度</div><div class="gdp-value" style="color:#a8d4f0">6.6%</div><div class="gdp-unit">2026F</div></div><div class="gdp-item"><div class="gdp-country">欧元区</div><div class="gdp-value" style="color:#8ab8d8">1.2%</div><div class="gdp-unit">2026F</div></div><div class="gdp-item"><div class="gdp-country">日本</div><div class="gdp-value" style="color:#8ab8d8">—</div><div class="gdp-unit">2026F</div></div></div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon ic-demand">📈</div>
+      <div class="section-title">全球石油需求</div>
+    </div>
+    <div class="section-body">The global oil demand is forecast to grow by a healthy 1.4 mb/d in 2026, y-o-y, unchanged from last month’s assessment. The OECD is forecast to grow by 0.1 mb/d, while the non-OECD is forecast to grow by about 1.3 mb/d. In 2027, global oil demand is forecast to grow by about 1.3 mb/d, y-o-y, also unchanged from last month’s assessment. The OECD is forecast to grow by 0.1 mb/d, while the non-OECD is forecast to grow by around 1.2 mb/d.</div>
+    <div class="stat-strip"><div class="stat-cell"><div class="stat-cell-label">2026同比增量</div><div><span class="stat-cell-value" style="color:#3fb950">+0.1</span><span class="stat-cell-unit">百万桶/日</span></div></div><div class="stat-cell"><div class="stat-cell-label">2027同比增量</div><div><span class="stat-cell-value" style="color:#3fb950">+1.3</span><span class="stat-cell-unit">百万桶/日</span></div></div></div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon ic-supply">⚙️</div>
+      <div class="section-title">全球石油供应</div>
+    </div>
+    <div class="section-body">Non-DoC liquids production (i.e., liquids production from countries not participating in the Declaration of Cooperation) is forecast to grow by about 0.6 mb/d, y-o-y, in 2026, unchanged from last month’s assessment. The main drivers of liquids production growth are expected to be Brazil, US, Canada, and Argentina. In 2027, non-DoC liquids production is forecast to grow by about 0.6 mb/d, also unchanged from last month’s assessment, driven mainly by Brazil, Qatar, Canada, and Argentina. Natural gas liquids (NGLs) and non-conventional liquids from countries participating in the DoC are forecast to grow by 0.1 mb/d, y-o-y, in 2026, to average about 8.8 mb/d, followed by similar growth in 2027 of about 0.1 mb/d, y-o-y, to average about 8.9 mb/d. In March, crude oil production by countries participating in the DoC dropped by 7.70 mb/d, m-o-m, to average about 35.06 mb/d, according to available secondary sources.</div>
+    
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon ic-stock">📦</div>
+      <div class="section-title">商业库存</div>
+    </div>
+    <div class="section-body">Preliminary February 2026 data show that OECD commercial oil inventories increased by 6.2 mb, m-o-m, to stand at 2,826 mb. At this level, OECD commercial stocks were 89.8 mb higher, y-o-y, and 38.5 mb above the latest five-year average, but 93.9 mb below the 2015–2019 average. Within the components, crude stocks increased by 42.9 mb while product stocks decreased by 36.7 mb, m-o-m. OECD commercial crude oil stocks stood at 1,366 mb. This was 53.2 mb higher, y-o-y, and 11.1 mb above the latest five-year average, but 81.4 mb below the 2015–2019 average. OECD total product stocks stood at 1,460 mb in February. This was 36.6 mb higher, y-o-y, and 27.4 mb above the latest five-year average, but 12.5 mb below the 2015–2019 average. In terms of days of forward cover, OECD commercial stocks increased by 0.5 days m-o-m in February, to 62.5 days. This was 1.9 days higher than in February 2025, 0.3 days above the latest five-year average, and in line with the 2015–2019 average.</div>
+    <div class="stock-bar-wrap"><div class="stock-bar-label"><span>经合组织商业库存</span><span>2,826 mb &nbsp;|&nbsp; 环比 — mb</span></div><div class="stock-bar-track"><div class="stock-bar-fill" style="width:54%"></div></div></div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon ic-balance">⚖️</div>
+      <div class="section-title">供需平衡</div>
+    </div>
+    <div class="section-body">The demand for DoC crude (i.e., crude from countries participating in the DoC) in 2026 remains unchanged from the previous month’s assessment to stand at 42.9 mb/d. This is about 0.6 mb/d higher than in 2025. The demand for DoC crude in 2027 also remains unchanged from the previous month’s assessment to stand at 43.6 mb/d. This is about 0.6 mb/d higher than the 2026 forecast.</div>
+    <div class="stat-strip"><div class="stat-cell"><div class="stat-cell-label">2026 DoC需求</div><div><span class="stat-cell-value" style="color:#e88080">42.9</span><span class="stat-cell-unit">百万桶/日</span></div></div><div class="stat-cell"><div class="stat-cell-label">2027 DoC需求</div><div><span class="stat-cell-value" style="color:#e88080">43.6</span><span class="stat-cell-unit">百万桶/日</span></div></div></div>
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon ic-product">🏭</div>
+      <div class="section-title">成品油市场</div>
+    </div>
+    <div class="section-body">In March, refining margins surged across all major regions, given the sharp reduction in product output and rising middle distillate crack spreads, which reached multi-year highs. Trade flow constraints and refinery run cuts in the East of Suez contributed further pressure on product margins amid the heavy refinery maintenance season. This situation led to a price increase for products that outpaced the rise in feedstock prices, boosting refining profitability. On the US Gulf Coast (USGC), the upside came from across the barrel, mainly driven by middle distillates. In Rotterdam, the gains offset losses in gasoline and low-sulphur fuel oil, while in Singapore, all products except middle distillates showed losses, as a sharp increase in feedstock prices limited any further upside for Asian refining economics.</div>
+    
+  </div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon ic-tanker">🚢</div>
+      <div class="section-title">油轮市场</div>
+    </div>
+    <div class="section-body">In March, trade disruptions and moves to source alternative supplies pushed dirty tanker spot freight rates to record levels. On the West Africa-to-East route, VLCC spot freight rates rose 34%, m-o-m. Suezmax spot freight rates on the USGC-to-Europe route jumped 104%, m-o-m. Aframax rates were particularly strong West of Suez, with the Intra-Mediterranean route increasing 68%, while the Indonesia-to-East route experienced more limited gains of 8%, m-o-m. Clean tanker spot freight rates also strengthened, led by West of Suez routes, which averaged 86% higher, m-o-m. East of Suez routes also exhibited gains, up 54% over the same period.</div>
+    
+  </div>
+  <div class="footer">
+    <div class="footer-meta">数据来源：OPEC 秘书处<br>仅供参考</div>
+    <div class="footer-next"><a href="https://publications.opec.org/momr">🔗 OPEC官网月报</a></div>
+  </div>
+</div>
+</body>
+</html>
