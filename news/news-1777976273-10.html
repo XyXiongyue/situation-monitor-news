@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIS欺骗与GNSS干扰：为什么区别决定了主张</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                         "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8; color: #333; background: #f5f5f5;
+        }
+        .container { max-width: 800px; margin: 0 auto; background: white;
+                      box-shadow: 0 2px 12px rgba(0,0,0,0.08); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                   color: white; padding: 40px 30px 30px; border-bottom: 4px solid #5568d3; }
+        .news-category { display: inline-block; background: rgba(255,255,255,0.2);
+                          padding: 6px 16px; border-radius: 20px; font-size: 13px;
+                          font-weight: 500; margin-bottom: 15px; letter-spacing: 0.5px; }
+        .title { font-size: 28px; font-weight: 700; line-height: 1.4; margin-bottom: 20px;
+                  text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .meta { display: flex; align-items: center; gap: 20px; font-size: 14px;
+                 color: rgba(255,255,255,0.9); flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 6px; }
+        .meta-item svg { width: 16px; height: 16px; opacity: 0.8; }
+        .content { padding: 40px 30px; }
+        .article-content { font-size: 17px; line-height: 1.9; color: #2c3e50; }
+        .article-content p { margin-bottom: 20px; text-indent: 2em; text-align: justify; }
+        .footer { text-align: center; padding: 30px; background: #fafafa;
+                   border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+        .footer-logo { font-weight: 600; color: #667eea; margin-bottom: 8px; }
+        .source-link { margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0; }
+        .source-link a { color: #667eea; text-decoration: none; font-size: 12px; }
+        .source-link a:hover { color: #764ba2; text-decoration: underline; }
+        .source-label { color: #999; font-size: 11px; margin-bottom: 8px; }
+        @media (max-width: 768px) {
+            .header { padding: 30px 20px 20px; }
+            .title { font-size: 24px; }
+            .content { padding: 30px 20px; }
+            .article-content { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="news-category">📰 Hellenic-石油公司</div>
+            <h1 class="title">AIS欺骗与GNSS干扰：为什么区别决定了主张</h1>
+            <div class="meta">
+                <div class="meta-item">
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>2026-05-05 18:17</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="article-content">
+                <p>国际航运新闻05/05/2026</p>
+                <p>信号看起来一样。答案完全不同。</p>
+                <p>到目前为止，每一位从事船体和战争风险工作的承保人都遇到过这样的船只：这些船只似乎在图表上传送，在物理轨迹偏离时保持静止位置，或者在一个海上航路点上与数十艘其他船只不可思议地聚集在一起。</p>
+                <p>位置异常不再是例外事件。它们越来越成为全球海上贸易的背景噪音。</p>
+                <p>但并非所有位置异常都是相同的。在安置时、更新时，尤其是在索赔时，未能区分它们，是当今市场上流传的更严重的分析错误之一。</p>
+                <p>有三种不同的信号故障类型。一种是故意的，血管起源的。两个是外部和血管不可知论。每一种保险的含义是完全不同的，与之对应的条款在保单中完全不同。</p>
+                <p>正确的分类不是一个技术细节。这是一个支付索赔和一个无效的政策之间的区别。</p>
+                <p>三种信号类型：工作定义AIS欺骗是一种主动的、源自血管的操纵。该船只或代表其行事的操作员操纵AIS转发器广播错误位置。该船自己的GPS可能是准确的;只有广播是伪造的。这个谎言是故意的和有针对性的。容器就是演员。</p>
+                <p>全球导航卫星系统干扰是无源干扰。外部RF噪音源使给定区域中的卫星信号产生干扰。受影响的接收器失去锁定并发出警报。故障是可见的，导航员知道出了问题。</p>
+                <p>全球导航卫星系统欺骗是两种被动类型中操作上更危险的一种。外部行为者广播伪造的卫星信号。全球导航卫星系统接收器锁定在看似合理但不正确的位置，没有发出警报。导航器没有任何迹象表明位置数据已被泄露。失败是看不见的。</p>
+                <p>主动和被动之间的操作和法律区别并不微妙。在活跃的案例中，容器是问题所在。在被动的情况下，船只是受害者。保险应对措施完全不同，每个应对措施的条款也不可互换。</p>
+                <p>为什么主动/被动的区别如此重要</p>
+                <p>当船只主动操纵其AIS广播时，索赔立即进入承保和制裁区域。</p>
+                <p>根据最大诚信的义务，虚假位置广播可能构成重大虚假陈述-MIA 1906第17条所载的信仰原则。如果广播是持续且故意的，保险公司有理由辩称保险被无效，而不仅仅是暂停。该法案第55（2）（a）条规定，保险人对因被保险人故意不当行为而造成的损失不承担责任，故意操纵头寸很难像其他任何行为一样被定性。</p>
+                <p>除了报道之外，还有制裁方面的问题。Kpler对海上制裁数据的分析显示，80%表现出主动AIS欺骗行为的船只在12个月内被指定。这并不是统计上的好奇心。这是一个承保信号。今天恶搞的船只很有可能明天就会受到制裁。H & M和P & I承销商的实际反应是拒绝、重新定价或退出关系，并且在指定之前而不是之后这样做。</p>
+                <p>AIS运营保修越来越多地写入H & M政策中，正式确认了这种风险。它需要连续、准确的AIS传输作为掩护条件。如果船只被发现压制或伪造其广播，无论是什么原因造成了损失，担保都会被打破，保险也会消失。</p>
+                <p>主动欺骗：问题的规模主动操纵AIS的规模已经远远超出了孤立的、机会主义的欺骗。AIS欺骗事件的发生率是2023年基线的25倍。同一数据集记录了261艘被发现在受到制裁之前进行欺骗的船只，证实位置操纵是逃避制裁的先兆和促成者，而不仅仅是逃避制裁的症状。</p>
+                <p>探测文献中现已明确提出了四种行为特征：·圆环：该船似乎以任何商业船只类型在物理上都不可能实现的速度绕固定地理点运行。·传送：AIS轨迹显示该船在几分钟内跳跃了数百海里。·静态幽灵：当船舶继续移动时，AIS位置被冻结。广播位置和船只的实际轨迹存在分歧。·身份克隆：两艘船只同时广播相同的MMSI身份。一首曲目是真实的;一首曲目是捏造的。</p>
+                <p>这些模式中的每一种都可以仅从信号数据中识别，而无需参考任何其他来源。与制裁观察名单、所有权登记册和港口国控制记录相结合，它们构成了承保决定的证据基础，或者在索赔背景下，构成了承保范围论点的证据基础。</p>
+                <p>被动问题：一个信号，多个受害者全球导航卫星系统干扰和欺骗在根本不同的几何结构上运行。如果主动AIS操纵根据设计影响单个船只，则被动GNSS干扰同时影响发射源范围内的每个接收器。该特征具有诊断性，因为同一区域的多艘船只报告在一个错误位置上收敛，该位置通常是位于其实际位置内陆的陆地点。</p>
+                <p>目前活跃的六大海上走廊：1.波斯湾和霍尔木兹海峡2。东地中海3.黑海4.波罗的海和芬兰湾5。红海和亚丁湾6.孟加拉湾和缅甸海岸</p>
+                <p>现在，每条主要走廊都受到了影响，而且数量还在加速增长，2025年全球有超过24，000艘船只受到影响。仅自2026年2月以来，海湾地区就记录了超过1，650起中断事件。这里的覆盖范围与当前案例不同，并且对于船舶来说，要有利得多。</p>
+                <p>源自国家或邻近国家行为者的全球导航卫星系统干扰属于研究所战争与罢工条款（IWSC）的范围。该船只不是肇事者;它是被评估为属于承保战争危险范围的外部行为的受害者。JWC列出区域指定适用，船体战争保险通过额外战争风险溢价（AWRP）重新定价，按每7天风险暴露船体价值的百分比收取。根据IWSC第5条，承保人保留提前七天通知取消战争保险并重新评级的权利。</p>
+                <p>当电子干扰被视为网络危险而不是战争危险时，越来越多地援引网络条款（CL.380 / LMA 5403）。特征很重要：它不仅影响承保路径，还影响保费分配、汇总管理和再保险回收。</p>
+                <p>索赔重建挑战巨大。由于该船的GPS已被泄露，因此在事件期间，AIS跟踪数据的证据不可靠。VDR记录、非GPS定位流和独立监视数据具有证据分量。因此，仅依赖欺骗时期的AIS跟踪数据的索赔是脆弱的。</p>
+                <p>是什么真正证实了船只的位置？每一个与欺骗有关的索赔（无论是主动的还是被动的）的核心问题都是一样的：船只在哪里，有什么证据可以证明这一点？</p>
+                <p>在有争议的欺骗案件中，仅靠AIS无法回答这个问题。四个独立的数据层，每个层单独最弱，组合最强，现在是严重索赔重建和承保尽职调查的标准：</p>
+                <p>·地面和卫星AIS，对接收器进行可信度检查。当多源数据被交叉引用时，信号级别会发现不可能的速度、不可能的跳跃和重复的身份。单一来源AIS还不够。</p>
+                <p>·无论AIS广播显示了什么，SAR和光学卫星图像都能提供真实船只位置的独立视觉确认。它是唯一能够在空间和时间上物理定位船舶的数据源，独立于任何无线电信号。</p>
+                <p>· RF地理定位通过三角测量船舶的无线电发射（其真实的RF特征）来定位船舶，即使在AIS广播被抑制、伪造或缺失的情况下也是如此。在AIS关闭或操纵的情况下，RF地理定位可以建立独立于所声明的事实位置。</p>
+                <p>·当电子信号受到损害或争议时，岸上摄影、港口代理记录、船员证词和实物目击等人类情报可以提供地面真相。它技术含量低，而且往往是决定性的。</p>
+                <p>这些来源均不足以单独解决有争议的案件。结合起来，它们构建了一种能够经受法医审查的立场叙述，并且仲裁小组或法院可以根据覆盖范围论点进行评估。</p>
+                <p>管理每个副本的条款主动和被动欺骗的政策架构位于完全不同的合同位置。</p>
+                <p>对于主动AIS操纵，相关条款为MIA 1906第17条（最大的诚信和虚假立场广播的重要性），第55（2）（a）条（排除故意不当行为造成的损失）、制裁条款（LMA 3100 / JH 2010/009）在OFAC、欧盟或英国指定后自动暂停承保，AIS运营保修，以及ICC（A）第4.1条，该条不包括归因于被保险人故意不当行为的货物保险。</p>
+                <p>对于无源全球导航卫星系统干扰，操作框架是研究所战争和罢工条款、JWC列出区域条款和AWRP机制、IWSC关于七天取消权的第5条以及网络条款，其中电子干扰被归类为网络危险而不是战争风险。索赔重建依赖于非AIS证据来源，因为受影响时期的AIS记录根据定义是不可靠的。</p>
+                <p>实际含义是，将GNSS欺骗事件视为AIS欺骗事件（或反之亦然）的承保人或理算人正在从错误的条款集，错误的覆盖问题和错误的证据标准中工作。初步分类步骤不是行政性的。它是实质性的。</p>
+                <p>这对承保实践意味着什么头寸异常将继续增加。制裁压力、关键走廊的地缘政治破坏、电子战能力的扩散等结构性驱动因素并未减弱。上述六个受影响的海上走廊涵盖了全球贸易量的大部分。在少数司法管辖区，欺骗不再是一种特殊风险;它是整个国际机队的基线运营条件。</p>
+                <p>对于承销商来说，这意味着AIS跟踪数据应被视为风险评估的起点，而不是结论。干净的AIS历史与干净的运营历史不同。四种欺骗签名--循环、跳跃、静态幽灵、克隆--可以从信号记录中检测到，并且应该在开始和更新时进行筛查，而不仅仅是在索赔出现时进行筛查。</p>
+                <p>对于索赔专业人士来说，这意味着主动与被动（船舶作为行为者或船舶作为受害者）的初步确定必须在覆盖范围分析之前。可以做出这一确定的数据源是可用的;问题是它们是否被系统地应用。</p>
+                <p>市场拥有管理这种风险的合同工具。如果应用正确，协会条款、AIS保证、JWC机制和网络条款共同提供了一个连贯的框架。差距并不在于政策语言。正是在分类步骤中确定了政策的哪一部分适用。</p>
+                <p>三个信号。不一样。资料来源：Kpler</p>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-logo">成品油资讯</div>
+            <div>国际能源资讯 · 实时追踪</div>
+            <div class="source-link">
+                <div class="source-label">📄 数据来源</div>
+                <div>来源：Hellenic-石油公司</div>
+                <a href="https://www.hellenicshippingnews.com/ais-spoofing-vs-gnss-interference-why-the-distinction-decides-the-claim/" target="_blank" rel="noopener">🔗 查看原文</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
