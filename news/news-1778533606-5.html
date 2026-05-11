@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在SOH中断的情况下重新平衡液体市场</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                         "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8; color: #333; background: #f5f5f5;
+        }
+        .container { max-width: 800px; margin: 0 auto; background: white;
+                      box-shadow: 0 2px 12px rgba(0,0,0,0.08); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                   color: white; padding: 40px 30px 30px; border-bottom: 4px solid #5568d3; }
+        .news-category { display: inline-block; background: rgba(255,255,255,0.2);
+                          padding: 6px 16px; border-radius: 20px; font-size: 13px;
+                          font-weight: 500; margin-bottom: 15px; letter-spacing: 0.5px; }
+        .title { font-size: 28px; font-weight: 700; line-height: 1.4; margin-bottom: 20px;
+                  text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .meta { display: flex; align-items: center; gap: 20px; font-size: 14px;
+                 color: rgba(255,255,255,0.9); flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 6px; }
+        .meta-item svg { width: 16px; height: 16px; opacity: 0.8; }
+        .content { padding: 40px 30px; }
+        .article-content { font-size: 17px; line-height: 1.9; color: #2c3e50; }
+        .article-content p { margin-bottom: 20px; text-indent: 2em; text-align: justify; }
+        .footer { text-align: center; padding: 30px; background: #fafafa;
+                   border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+        .footer-logo { font-weight: 600; color: #667eea; margin-bottom: 8px; }
+        .source-link { margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0; }
+        .source-link a { color: #667eea; text-decoration: none; font-size: 12px; }
+        .source-link a:hover { color: #764ba2; text-decoration: underline; }
+        .source-label { color: #999; font-size: 11px; margin-bottom: 8px; }
+        @media (max-width: 768px) {
+            .header { padding: 30px 20px 20px; }
+            .title { font-size: 24px; }
+            .content { padding: 30px 20px; }
+            .article-content { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="news-category">📰 Hellenic-石油公司</div>
+            <h1 class="title">在SOH中断的情况下重新平衡液体市场</h1>
+            <div class="meta">
+                <div class="meta-item">
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>2026-05-12 05:06</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="article-content">
+                <p>国际航运新闻12/05/2026</p>
+                <p>在本期市场脉动中，我们分析了霍尔木兹海峡约20 Mbd的流量被消除后市场如何再平衡。此次调整是由供应削减、炼油厂产量减少、有限改道、需求侵蚀和库存削减推动的，但仍不完整，导致系统结构性收紧。</p>
+                <p>中断60天后，霍尔木兹海峡继续以最低容量运行，仅观察到有限的船只活动。最初看似的物流瓶颈现在演变成长期的结构性混乱，大大减少了从中东湾流入全球市场的原油和成品油流量。如表1所示，该海峡的流量已从中断前的约20 Mbd暴跌至4月份的近1 Mbd，凸显了供应冲击的规模。</p>
+                <p>市场通过多层调整过程做出反应，结合了供给侧削减、炼油厂减产、物流改道、需求侵蚀和库存削减，详情见表2。</p>
+                <p>主要反应是原油供应减少，由于出口路线仍然受到限制，生产商削减了产量。炼油厂减产加剧了这一点，特别是在中东，炼油厂中断和出口瓶颈已将利用率推至多年低点。在亚洲，作为一个依赖原油进口的地区，原料供应紧张也限制了吞吐量。只要海峡仍然受到限制，炼油厂减产和供应损失预计将持续存在;根据我们的基本假设，预计从6月份开始流量只会部分复苏，此后会逐渐改善。这两个杠杆加在一起，占了立即再平衡的大部分。</p>
+                <p>后勤调整仅提供了部分缓解。管道改道，最明显的是沙特阿拉伯东西管道和阿联酋经富查伊拉输送的原油流量，有所增加，与1月至2月的水平相比，3月新增量约为2.9 Mbd，4月迄今为止新增量约为4.2 Mbd。然而，这些流量仍然是结构性的限制，远远无法弥补损失的海运量。同样，已经在水中的桶也被重新分配到赤字地区，有助于缓解短期失衡，但只提供暂时的支持。</p>
+                <p>在需求方面，消费侵蚀的早期迹象正在出现，特别是在亚洲、东非和拉丁美洲等价格敏感地区。更高的运费和更严格的供应正在逐渐影响到最终用户定价，导致需求疲软，尽管存在滞后。</p>
+                <p>库存继续充当关键缓冲。陆上和水上大宗商品的撤资以及ARA、美国和新加坡等主要枢纽正在帮助弥合供应缺口。然而，库存支持仍然有限，无法可持续地抵消长期中断。</p>
+                <p>如图所示，超过三分之二的再平衡来自供应削减和炼油厂减产，突显出替代调整机制的灵活性有限。</p>
+                <p>实际上，再平衡是通过以下方式实现的：·上游供应削减（主要调整）·炼油厂削减运行（次要但重要）·有限的流量改道·需求侵蚀·陆上储存、炼油厂和码头的原油和产品库存下降·水上石油下降</p>
+                <p>然而，这些机制是再分配的，而不是相加的。该系统并不是在替换中东海湾地区损失的石油;而是在吸收它们。</p>
+                <p>结论全球石油市场目前在低灵活性、高摩擦的环境中运行，供应损失正在通过限制调整而不是新供应来抵消。虽然预计从6月份开始，基本情况将逐渐复苏，但再平衡仍不完整。</p>
+                <p>从本质上讲，市场主要通过破坏供应而不是替代来解决20+ Mbd的中断。霍尔木兹海峡流量的损失没有得到补充，只是重新分配，使系统在结构上更加紧张，越来越依赖库存和需求调整来保持凝聚力。</p>
+                <p>您可以真正信任的市场见解Kpler提供公正、专家驱动的情报，帮助您跟踪关键原油市场发展，以进行自己的分析。我们精确的预测有助于做出更明智的交易和风险管理决策。在冲突和地缘政治不确定性时期，我们的实时数据可让您领先于供应中断和价格波动。来源：Kpler</p>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-logo">成品油资讯</div>
+            <div>国际能源资讯 · 实时追踪</div>
+            <div class="source-link">
+                <div class="source-label">📄 数据来源</div>
+                <div>来源：Hellenic-石油公司</div>
+                <a href="https://www.hellenicshippingnews.com/rebalancing-the-liquids-markets-amid-soh-disruption/" target="_blank" rel="noopener">🔗 查看原文</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
