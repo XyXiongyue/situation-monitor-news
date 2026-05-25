@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to build a risk tree to assess shadow fleet exposure in your network</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                         "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8; color: #333; background: #f5f5f5;
+        }
+        .container { max-width: 800px; margin: 0 auto; background: white;
+                      box-shadow: 0 2px 12px rgba(0,0,0,0.08); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                   color: white; padding: 40px 30px 30px; border-bottom: 4px solid #5568d3; }
+        .news-category { display: inline-block; background: rgba(255,255,255,0.2);
+                          padding: 6px 16px; border-radius: 20px; font-size: 13px;
+                          font-weight: 500; margin-bottom: 15px; letter-spacing: 0.5px; }
+        .title { font-size: 28px; font-weight: 700; line-height: 1.4; margin-bottom: 20px;
+                  text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .meta { display: flex; align-items: center; gap: 20px; font-size: 14px;
+                 color: rgba(255,255,255,0.9); flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 6px; }
+        .meta-item svg { width: 16px; height: 16px; opacity: 0.8; }
+        .content { padding: 40px 30px; }
+        .article-content { font-size: 17px; line-height: 1.9; color: #2c3e50; }
+        .article-content p { margin-bottom: 20px; text-indent: 2em; text-align: justify; }
+        .footer { text-align: center; padding: 30px; background: #fafafa;
+                   border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+        .footer-logo { font-weight: 600; color: #667eea; margin-bottom: 8px; }
+        .source-link { margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0; }
+        .source-link a { color: #667eea; text-decoration: none; font-size: 12px; }
+        .source-link a:hover { color: #764ba2; text-decoration: underline; }
+        .source-label { color: #999; font-size: 11px; margin-bottom: 8px; }
+        @media (max-width: 768px) {
+            .header { padding: 30px 20px 20px; }
+            .title { font-size: 24px; }
+            .content { padding: 30px 20px; }
+            .article-content { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="news-category">📰 Hellenic-石油公司</div>
+            <h1 class="title">How to build a risk tree to assess shadow fleet exposure in your network</h1>
+            <div class="meta">
+                <div class="meta-item">
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>2026-05-26 05:24</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="article-content">
+                <p>inInternational Shipping News26/05/2026</p>
+                <p>The shadow fleet is no longer a peripheral concern for compliance teams. It has grown into a structural feature of global oil markets and the exposure it creates runs deeper than most organisations have mapped. The risk extends beyond vessels themselves. It reaches through counterparties, supply chains, port networks, and financial relationships in ways that standard sanctions screening workflows were never designed to catch.</p>
+                <p>Building a risk tree changes that. This methodology forces a structured, hierarchical view of how shadow fleet exposure enters your network, where it concentrates, and what signals indicate its presence.</p>
+                <p>Drawing on Kpler data and analysis, this article explains how to build a maritime risk tree using a compliance platform approach.</p>
+                <p>Understanding the shadow fleet</p>
+                <p>The industry uses “shadow fleet” inconsistently, and no single definition governs how it is applied in compliance frameworks.</p>
+                <p>Kpler distinguishes between two categories:</p>
+                <p>A third category – the grey fleet – encompasses vessels with opaque ownership structures or trading patterns that warrant enhanced due diligence, but have not been formally designated.</p>
+                <p>Understanding which category a vessel falls into shapes both the urgency of the response and the investigative methodology required.</p>
+                <p>Why the scale matters</p>
+                <p>The shadow fleet is no longer a fringe phenomenon operating at the margins of global trade. By December 2025,Kpler’s monitoring of more than 2,800 vesselsconfirmed it had become a durable parallel logistics system rather than a temporary sanctions workaround.</p>
+                <p>Those vessels moved approximately 3,733 million barrels of oil across the year — around 6-7% of global crude flows.</p>
+                <p>Kpler also documented the expansion of the grey fleet:</p>
+                <p>Meanwhile,deceptive behaviourshave scaled in direct proportion to enforcement pressure, with Kpler recording the following in 2025:</p>
+                <p>Among the 251 vessels loaded with sanctioned Iranian oil, the evasion picture is particularly acute:</p>
+                <p>Rather than contracting under sanctions, the fleet has hardened — adapting through fragmented ownership networks, accelerated flag changes, self-insurance arrangements, and deepening reliance on permissive jurisdictions. The critical compliance implication is that behavioural signals consistently precede formal designation.Kpler identified 244 active shadow fleet vesselsat elevated risk of future designation.</p>
+                <p>The results since publication:</p>
+                <p>Static watchlist matching will always lag this environment. This is the exposure your risk tree needs to map.‍</p>
+                <p>Building a risk tree: The five primary branches</p>
+                <p>A risk tree for shadow fleet exposure works by decomposing the top-level risk — “my organisation has direct or indirect exposure to shadow fleet activity” — into discrete branches. Each branch represents a different pathway by which exposure can materialise. Each branch ends in observable indicators that can be screened, monitored, or escalated.</p>
+                <p>The root node is your organisation’s risk appetite statement on sanctions and illicit maritime trade. Everything below it represents a way that exposure can enter despite that stated appetite.</p>
+                <p>Branch 1: Direct vessel exposure</p>
+                <p>The most obvious branch covers vessels with which your organisation interacts directly — as charterer, operator, cargo owner, insurer, financier, or port service provider.</p>
+                <p>Standard indicators to screen:</p>
+                <p>The risk tree branch for direct vessel exposure should include two distinct sub-branches:</p>
+                <p>Vessels eventually sanctioned consistently displayed detectable behavioural signals — false AIS positions, frequent reflagging, irregular STS activity, and opaque ownership structures — weeks or months before formal enforcement action. Of the 302 vessels Kpler identified as high-risk, 42 (14% of the cohort) were subsequently sanctioned, confirming that the vast majority of the most active shadow tankers are not on any watchlist at the time of their voyages.</p>
+                <p>Detection methodology that relies exclusively on list-matching will always be reactive. Screening forAIS spoofing— comparing predicted vessel positions against AIS-reported positions to identify fabricated location data — and fordark STS transfersconfirmed via satellite imagery moves the detection window materially earlier.</p>
+                <p>Branch 2: Counterparty exposure</p>
+                <p>The second branch covers entities, not vessels, that sit within your commercial network. This is where shadow fleet exposure is most frequently underestimated.</p>
+                <p>Shell company structures are the primary mechanism for concealing vessel ownership and beneficial interests. Many shadow fleet vessels are operated by single-purpose entities with no track record of ship management, often registered in jurisdictions with minimal oversight.</p>
+                <p>Kpler’s analysis of deceptive shipping practices identifies ownership opacity as one of five core risk dimensions — alongside behavioural indicators, geographic risk, associative risk, and cargo risk — precisely because it generates exposure even in the absence of other red flags.</p>
+                <p>Key indicators at this branch:</p>
+                <p>The IMO number is immutable. However, vessel name, flag, and registered owner change frequently. Tracking those changes over time reveals evasion patterns that a point-in-time check will miss.</p>
+                <p>Ultimate beneficial ownership (UBO) analysis is the tool most compliance teams underinvest in at this branch. Tracing through layered corporate structures to identify whether a sanctioned individual or entity has a controlling interest requires:</p>
+                <p>This is not a process that automated list-screening was designed to perform.</p>
+                <p>Branch 3: Supply chain and cargo origin exposure</p>
+                <p>The third branch addresses how shadow fleet activity can introduce sanctioned cargo into otherwise legitimate supply chains, without the vessels carrying it ever appearing on a watchlist.</p>
+                <p>The mechanism is cargo laundering via STS transfer. The process works as follows:</p>
+                <p>The receiving vessel may never have called at a sanctioned port. The evasion networks maintain fleets of vessels specifically for this purpose — if some are sanctioned, others continue operating, making designation a cost of business rather than an existential deterrent.</p>
+                <p>For organisations operating in the physical commodity markets — refiners, trading houses, and commodity financiers — this branch represents the most material exposure.</p>
+                <p>The detection challenge requires cross-referencingAIS transmission historyagainst satellite-detected vessel positions and correlating both against cargo documentation. No single data source is sufficient.</p>
+                <p>Branch 4: Geographic corridor exposure</p>
+                <p>Not all shadow fleet risk is vessel-specific or counterparty-specific. Some of it is geographic. Operating in certain corridors materially increases the probability of indirect encounter with shadow fleet vessels, regardless of who your direct counterparties are.</p>
+                <p>High-risk corridors include:</p>
+                <p>Kpler identified the Eastern Mediterranean, Gulf of Oman, Black Sea, and transshipment hubs tied to Russian crude and LNG flows as the regions where enforcement actions concentrated most heavily in 2025, precisely because shadow fleet activity in those corridors is structurally dense.</p>
+                <p>Collision risk deserves its own node in the risk tree. A vessel repeatedly going dark in high-risk zones is not exhibiting a technical anomaly. It is exhibiting a behavioural pattern that generates direct exposure for any legitimate vessel sharing that corridor.</p>
+                <p>By mid-2025, more than 400 oil tankers were estimated to be operating under opaque ownership without Western insurance, compounding the collision and pollution liability risk for compliant operators in the same waters.</p>
+                <p>The risk tree branch for geographic exposure should model:</p>
+                <p>For marine insurers and P&I clubs, incorporating this spatial dimension into underwriting models is becoming a baseline expectation rather than a differentiator.‍</p>
+                <p>Branch 5: Indirect financial and service exposure</p>
+                <p>The fifth branch is the most difficult to map and the most frequently absent from compliance frameworks. It covers exposure that arises not through direct commercial interaction with shadow fleet vessels, but through service providers, financiers, insurers, and agents that support them.</p>
+                <p>Sources of indirect exposure:</p>
+                <p>Non-transparent financing and insurance arrangements are a defining structural feature of the shadow fleet. Self-insurance, non-IG P&I cover, and unregulated registries as the mechanisms that have allowed the fleet to sustain operations as traditional insurers, banks, and classification societies reduced exposure to high-risk tonnage.</p>
+                <p>Indicators at this branch:</p>
+                <p>The financial stakes are considerable. Despite mounting enforcement pressure, exports from the most sanctions-affected suppliers remained broadly stable year-on-year in 2025 — enforcement didn’t freeze commodity flows, it redirected them into less visible channels. The economic incentives sustaining that redirection are structural, so as long as sanctioned commodities command substantial premiums for sellers or discounts for buyers, operators will continue absorbing regulatory risk.</p>
+                <p>A single voyage carrying sanctioned cargo can generate profits equivalent to months of legitimate operations. For compliance functions with exposure to the indirect service layer, that arithmetic makes this branch commercially significant — not a compliance footnote.</p>
+                <p>Operationalising the risk tree</p>
+                <p>A risk tree is only useful if connected to live data and actionable thresholds. The practical implementation involves three layers. We integrate these data feeds into rules-based alerts and analyst workflows to make the tree operational.‍</p>
+                <p>Layer 1: Continuous vessel monitoring</p>
+                <p>We anchor this layer on a combination of AIS data, satellite imagery, and watchlist feeds. The critical technical requirement is that AIS data must be cross-referenced against satellite-detected positions—not treated as ground truth in isolation.</p>
+                <p>Spoofed AIS is specifically designed to deceive systems that rely on it uncritically.Kpler’s risk and compliance methodologyverifies dark STS events through satellite imagery confirmation rather than relying on AIS transmission records alone — a distinction that matters considerably when vessels have disabled or manipulated their transponders.</p>
+                <p>Given that dark STS transfers and AIS spoofing together generate hundreds of potentially deceptive signals every month, continuous monitoring has become a baseline requirement, not an occasional response.</p>
+                <p>Layer 2: Entity resolution</p>
+                <p>The corporate ownership layer must be kept current because vessel ownership changes are a deliberate evasion tactic, not an administrative coincidence. Flag-hopping — moving a vessel between registries to reset its compliance profile — is routine across the shadow fleet. An entity that acquires a vessel post-designation is not automatically clean. The acquisition pattern itself — shell company, no prior management history, vessel age profile consistent with shadow fleet operations — is a signal worth escalating.</p>
+                <p>A change in beneficial ownership structure is one of the clearest predictors of elevated risk, particularly where that change involves a shift to opaque jurisdictions, additional shell company layers, or rapid reflagging. Shadow fleet operators routinely replace sanctioned vessels by purchasing tonnage from secondary markets and reregistering under obscure flag states.</p>
+                <p>Layer 3: Analyst-in-the-loop escalation</p>
+                <p>Automated screening generates alerts. Human analysts with maritime intelligence expertise are required to interpret them. Flag-hopping sequences, layered identity manipulation, and complex multi-vessel STS chains require contextual judgement that rule-based systems cannot fully replicate.</p>
+                <p>Vessels eventually sanctioned typically move through a recognisable behavioural arc — early indicators such as repeated high-risk port calls and onset of AIS spoofing, followed by an escalation phase involving multiple dark STS events and sustained signal manipulation, before reaching peak illicit activity. Identifying where a vessel sits within that arc requires an analyst capable of reading the pattern, not just matching it against a list.</p>
+                <p>The risk tree should define:</p>
+                <p>The compliance argument for acting now</p>
+                <p>Sanctions enforcement is accelerating on multiple fronts. What changed in 2025 was not just the volume of designations — it was the shift in regulatory focus from individual vessels to the entire architecture enabling circumvention — improper AIS usage, shell-company ownership structures, weakly verified insurance certificates, and trades brokered through lightly regulated intermediaries</p>
+                <p>Recent regulatory developments</p>
+                <p>Current designation counts (mid-2025)</p>
+                <p>Enforcement mechanisms remain fragmented enough to leave significant jurisdictional gaps that sophisticated operators continue to exploit. These gaps are expected to drive risk migration rather than risk reduction in 2026 — with diversion pathways tightening and growing more sophisticated, particularly around the Eastern Mediterranean, Southeast Asia, and the Gulf of Oman.</p>
+                <p>For compliance functions, the question is not whether shadow fleet exposure exists somewhere in your network. At the scale the fleet now operates, the question is whether that exposure has been mapped, scored, and actively monitored across all five branches.</p>
+                <p>A risk tree built on vessel behaviour, counterparty ownership, cargo origin, geographic corridor, and service provider relationships provides the framework to answer that question with confidence rather than assumptions.</p>
+                <p>The cost of building it is analytical. The cost of not building it is regulatory.</p>
+                <p>Frequently asked questions</p>
+                <p>What is the difference between a dark fleet and a shadow fleet?</p>
+                <p>The shadow fleet is the broader category encompassing all vessels engaged in sanctions evasion or illicit maritime trade. The dark fleet is a subset—vessels that actively conceal movements and cargo through AIS manipulation and covert operations. The grey fleet refers to vessels with opaque ownership that warrant enhanced due diligence but have not been formally designated.</p>
+                <p>How quickly can a vessel’s risk profile change?</p>
+                <p>Vessel risk profiles can change within days. Flag-hopping, ownership transfers to shell companies, and name changes are common evasion tactics. We recommend continuous monitoring rather than periodic screening to catch these changes.</p>
+                <p>What data sources are essential for shadow fleet monitoring?</p>
+                <p>No single source is sufficient. Effective monitoring requires AIS data, satellite imagery, watchlist feeds, corporate registry data, and port call records. Cross-referencing these sources is essential because spoofed AIS is designed to deceive systems that rely on it alone.</p>
+                <p>How do I prioritise which branches of the risk tree to build first?</p>
+                <p>Start with your organisation’s primary exposure pathway. Charterers and cargo owners should prioritise direct vessel exposure and cargo origin branches. Insurers should focus on geographic corridor and counterparty exposure. Financial institutions should emphasise indirect financial and service exposure.</p>
+                <p>What triggers should escalate an alert to human review?</p>
+                <p>We recommend escalation for: multiple concurrent risk indicators, AIS gaps exceeding 24 hours in non-coastal waters, ownership changes to newly established entities, and any connection to previously sanctioned corporate networks.Source: Kpler</p>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-logo">成品油资讯</div>
+            <div>国际能源资讯 · 实时追踪</div>
+            <div class="source-link">
+                <div class="source-label">📄 数据来源</div>
+                <div>来源：Hellenic-石油公司</div>
+                <a href="https://www.hellenicshippingnews.com/how-to-build-a-risk-tree-to-assess-shadow-fleet-exposure-in-your-network/" target="_blank" rel="noopener">🔗 查看原文</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
