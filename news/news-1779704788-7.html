@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The index that moves with the market: why contracted rates deliver</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                         "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8; color: #333; background: #f5f5f5;
+        }
+        .container { max-width: 800px; margin: 0 auto; background: white;
+                      box-shadow: 0 2px 12px rgba(0,0,0,0.08); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                   color: white; padding: 40px 30px 30px; border-bottom: 4px solid #5568d3; }
+        .news-category { display: inline-block; background: rgba(255,255,255,0.2);
+                          padding: 6px 16px; border-radius: 20px; font-size: 13px;
+                          font-weight: 500; margin-bottom: 15px; letter-spacing: 0.5px; }
+        .title { font-size: 28px; font-weight: 700; line-height: 1.4; margin-bottom: 20px;
+                  text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .meta { display: flex; align-items: center; gap: 20px; font-size: 14px;
+                 color: rgba(255,255,255,0.9); flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 6px; }
+        .meta-item svg { width: 16px; height: 16px; opacity: 0.8; }
+        .content { padding: 40px 30px; }
+        .article-content { font-size: 17px; line-height: 1.9; color: #2c3e50; }
+        .article-content p { margin-bottom: 20px; text-indent: 2em; text-align: justify; }
+        .footer { text-align: center; padding: 30px; background: #fafafa;
+                   border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+        .footer-logo { font-weight: 600; color: #667eea; margin-bottom: 8px; }
+        .source-link { margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0; }
+        .source-link a { color: #667eea; text-decoration: none; font-size: 12px; }
+        .source-link a:hover { color: #764ba2; text-decoration: underline; }
+        .source-label { color: #999; font-size: 11px; margin-bottom: 8px; }
+        @media (max-width: 768px) {
+            .header { padding: 30px 20px 20px; }
+            .title { font-size: 24px; }
+            .content { padding: 30px 20px; }
+            .article-content { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="news-category">📰 Hellenic-石油公司</div>
+            <h1 class="title">The index that moves with the market: why contracted rates deliver</h1>
+            <div class="meta">
+                <div class="meta-item">
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>2026-05-25 18:26</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="article-content">
+                <p>inInternational Shipping News25/05/2026</p>
+                <p>Contracted rate indexes like XSI-C capture freight rates at the moment of booking, giving a two-week head start over cargo-loaded indexes. Find out why that lead time makes all the difference for hedging and index-linked contracts.</p>
+                <p>Indexes based on contracted rates are the best foundation for hedging and index-linked contracts, Fabio Brocca, Chief Product Officer at Xeneta, explains why.</p>
+                <p>There are many freight rate indexes in the market. Some are built on contracted rates. Some are built on quotes. Some on surveys. Some on “real shipped rates” (the rates paid by shipper when a container is loaded on a vessel).</p>
+                <p>The “loaded on board”-based camp often makes a compelling argument: short-term contracts aren’t the same as what shippers actually pay. Therefore, there is a view that only an index derived from executed shipments truly represents the market.</p>
+                <p>I disagree. Continue reading to explore why.</p>
+                <p>The Contracted Rates vs. Cargo Loaded Rates DebateThe critique of contracts/quote-based indexes is intuitive on the surface: carriers quote one thing, shippers pay another. Not all contracted/quoted rates become a shipment, there might be further negotiation, maybe last-minute changes. Surely there’s a gap?</p>
+                <p>However, this claim misses a fundamental truth about how freight markets work: contracts/quotes come before shipments. A carrier rate published today reflects what cargo will cost when it ships in the coming days. Contracts and quotes are not noise; they are the “market”. And when you have enough differentiated contracts from the right sources, at the right time, an index like XSI-C doesn’t just approximate the market. It is the market, recorded in real time.</p>
+                <p>After all, if you call your provider, that is the (average) price that it will cost you today to get your cargo moved.</p>
+                <p>The ExperimentWe compared a regional XSI-C against a weekly index that tracks rates for cargo already on board (rates locked in at booking execution, reflecting shipped transactions).</p>
+                <p>For context, XSI-C (Xeneta Shipping Index by Compass) is a publicly available, daily index of short-term ocean container freight rates (contracts valid under 32 days) calculated from contracted rates reported by shippers and freight forwarders across major global trade lanes.</p>
+                <p>Our question is simple: can XSI-C accurately predict the index based on cargo loaded?For simplicity, we focus on Asia-North Europe, a very relevant and dynamic trade lane considering the Middle East war. Yet, our findings are true for all trade lanes that we have tested.</p>
+                <p>The first step is to measure the lag between XSI-C and the index based on cargo loaded rates. Because bookings precede shipments, XSI-C provides a signal roughly two weeks before the index, based on cargo loaded on vessel.</p>
+                <p>The second step is to implement a simple linear regression to predict the index based on cargo loaded using XSI-C.</p>
+                <p>Results: Near-Perfect PredictabilityA simple linear regression explains 98.9% of the variance in weekly cargo loaded rates.</p>
+                <p>For every $1,000 increase in XSI-C, the index based on cargo loaded rates follows with approximately a $926 increase, almost 2 weeks later. The two indexes use different data sources and weighting methodologies, but what matters is the consistency and predictability of the relationship.</p>
+                <p>The predicted line tracks the actual index so closely over two years of data that the gap is barely visible on the chart.</p>
+                <p>In other trade lanes like Asia to US West Coast the coefficient is essentially 1.0: actuals track contracts nearly dollar-for-dollar. For a market as complex as trans-Pacific freight, this is a remarkably clean relationship, especially considering the different methodologies.</p>
+                <p>It is also worth noting that this analysis uses only XSI-C. Using Xeneta’s full short- and long-term rate data, or combining with other public indexes like SCFI, would likely produce an even stronger result.</p>
+                <p>Why This Matters for index-Linked-ContractsIndex-linked contracts work only if the reference index tracks the market real time. When it doesn’t, neither party is protected. Indexes based on cargo loaded are late. For example, the Asia to North Europe index based on cargo loaded rates today shows $2,039, barely increased in the last few weeks. If you call any carrier right now and try to book a 40′ container at that price, you won’t be able to. The short-term market is sitting at $2,863. This is an $824 difference!</p>
+                <p>If you have an index linked contract based on loaded rates, the index adjusts with a delay. In a rising market, your price will be artificially low, and your carrier has every incentive to roll your container and sell that slot to a spot buyer at $800 more. Your “contracted” cargo sits on the dock.</p>
+                <p>When rates fall, the mirror problem hits: your index is slow to reflect the drop, you’re overpaying relative to the short-term market, and shippers can move to the short-term market to capture the savings.</p>
+                <p>Over a full cycle the two problems may average out, but index-linked contracts exist precisely to manage short-term exposure, and it’s in the short term that the lag destroys the contract’s core purpose aligning market rates and contract rates.</p>
+                <p>A contracted-based index like XSI-C or Xeneta short term, keeps the contract anchored to the market both parties are operating in.Why This Matters for financial instruments and derivatives</p>
+                <p>The strength of this relationship has direct implications for anyone using freight indexes as the basis for financial hedging or derivative instruments.</p>
+                <p>You cannot hedge what has already happened.</p>
+                <p>A cargo loaded rates-based index, by definition, records rates for cargo that has already been booked and shipped. By the time the index publishes, the economic exposure has already crystallized. Anyone using this data to hedge is, in a real sense, hedging in arrears.</p>
+                <p>An index based on contracted rates like XSI-C is different. It is available daily, reflects the market as it stands today, and, as this analysis shows, leads the index based on cargo loaded by several weeks. That window is exactly when hedging decisions need to be made.</p>
+                <p>Leading indicator = actionable signalFor a financial instrument to be useful, it must give participants the ability to act before the economic outcome is determined. XSI-C satisfies this requirement. An index based on cargo loaded rates, by its own construction, does not.</p>
+                <p>The fact that XSI-C predicts actuals with R² at 0.989 means that a derivative priced on XSI-C provides essentially equivalent economic exposure to one priced on cargo loaded, but with the critical advantage of being forward-looking.</p>
+                <p>The TakeawayThe debate between contracted-based and cargo loaded-based indexes often frames the two as competing claims about who is “more right.” This analysis reframes the question: they measure different points in the same causal chain, and contracts/quotes come first.</p>
+                <p>For market participants who need to benchmark, forecast, or hedge freight costs, this has a clear implication: a high quality, transparent, daily quote index isn’t a substitute for cargo loaded index, it’s a predictor of it (and a more actionable one). And as a foundation for financial instruments, it offers something that rates for cargo loaded never can: the signal before the outcome.</p>
+                <p>A note on index aggregation and short-term marketA single average index number for a regional trade lane often may obscures more than it reveals. It collapses different origin-destination pairs into one figure, hiding the different rate behavior between ports within the same region. It ignores the spread between market low and market high</p>
+                <p>Further, only looking at short term rates is not a complete representation of what shippers are paying to load their containers, because each vessel is loaded with a mix of short term and long-term contracts.</p>
+                <p>An index built on short-term averages will tell you the directional trend and the midpoint, but not what a chemical company should pay based on their volume, what best-in-class shippers achieve at the low end of the long-term market, or what a competitive spot rate looks like for faster transit.</p>
+                <p>That’s not a flaw in this analysis, but rather an acknowledgment that ocean freight rate benchmarking is more nuanced than a single index can represent. To make the right procurement decisions you need access to port-port rates, short- and long-term contracts, and the ability to evaluate price in the context of the service you receive. That granularity is what a platform like Xeneta provides.Source: Xeneta</p>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-logo">成品油资讯</div>
+            <div>国际能源资讯 · 实时追踪</div>
+            <div class="source-link">
+                <div class="source-label">📄 数据来源</div>
+                <div>来源：Hellenic-石油公司</div>
+                <a href="https://www.hellenicshippingnews.com/the-index-that-moves-with-the-market-why-contracted-rates-deliver/" target="_blank" rel="noopener">🔗 查看原文</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
