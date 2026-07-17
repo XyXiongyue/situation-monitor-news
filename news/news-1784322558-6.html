@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>位置未知</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                         "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8; color: #333; background: #f5f5f5;
+        }
+        .container { max-width: 800px; margin: 0 auto; background: white;
+                      box-shadow: 0 2px 12px rgba(0,0,0,0.08); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                   color: white; padding: 40px 30px 30px; border-bottom: 4px solid #5568d3; }
+        .news-category { display: inline-block; background: rgba(255,255,255,0.2);
+                          padding: 6px 16px; border-radius: 20px; font-size: 13px;
+                          font-weight: 500; margin-bottom: 15px; letter-spacing: 0.5px; }
+        .title { font-size: 28px; font-weight: 700; line-height: 1.4; margin-bottom: 20px;
+                  text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .meta { display: flex; align-items: center; gap: 20px; font-size: 14px;
+                 color: rgba(255,255,255,0.9); flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 6px; }
+        .meta-item svg { width: 16px; height: 16px; opacity: 0.8; }
+        .content { padding: 40px 30px; }
+        .article-content { font-size: 17px; line-height: 1.9; color: #2c3e50; }
+        .article-content p { margin-bottom: 20px; text-indent: 2em; text-align: justify; }
+        .footer { text-align: center; padding: 30px; background: #fafafa;
+                   border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+        .footer-logo { font-weight: 600; color: #667eea; margin-bottom: 8px; }
+        .source-link { margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0; }
+        .source-link a { color: #667eea; text-decoration: none; font-size: 12px; }
+        .source-link a:hover { color: #764ba2; text-decoration: underline; }
+        .source-label { color: #999; font-size: 11px; margin-bottom: 8px; }
+        @media (max-width: 768px) {
+            .header { padding: 30px 20px 20px; }
+            .title { font-size: 24px; }
+            .content { padding: 30px 20px; }
+            .article-content { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="news-category">📰 Hellenic-石油公司</div>
+            <h1 class="title">位置未知</h1>
+            <div class="meta">
+                <div class="meta-item">
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>2026-07-18 05:09</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="article-content">
+                <p>国际航运新闻18/07/2026</p>
+                <p>在HFW受船东指示的一个案例中，船长做出了合理的判断，确定由于干扰和欺骗，航行不安全，违反了租船人的命令。业主可能会声称这构成了合理的偏离。相反，定期租船人可能会声称该船舶已停租，因为该船舶没有执行立即需要的服务。租船人的论点是否成功将取决于租船合同中休租条款的确切措辞以及案件的具体情况。</p>
+                <p>然而，承租人可能能够辩称，根据标准的NYPE第15条，船舶因设备故障而损失的任何时间都是停租的。虽然没有直接处理全球定位系统干扰或自动识别系统欺骗问题的案例主管当局，但在伦敦仲裁23/89号中，一艘船舶由于其雷达的状况而无法返回锚地，损失了时间，该船舶因设备故障而被视为停租。</p>
+                <p>理论上，租船人可以辩称，由于GPS或AIS问题而无法航行的船只也属于停租。</p>
+                <p>决定性的问题是GPS干扰是否符合故障的资格。在The Quarters Pearl [2004] 2 Lloyd ' s Rep. 305（CA）中，法院考虑了管道泄漏是否属于设备故障，认为“……排放管等设备在不再作为管道发挥作用时发生故障”。《珍珠报》还提到了1982年3月22日未报道的《Thanterfly A》，法官在该判决中评论说：“..故障的原因并不重要。它可能是某种外部因素，也可能是机械或设备的某种内部缺陷，但如果机械或设备不起作用，也可能发生故障，那么机械或设备就会出现故障”。</p>
+                <p>尽管取决于事实，GPS在哪里被干扰，导致船只的位置根本不显示，但这很可能符合故障的资格。如果GPS被欺骗，可以说GPS接收器没有损坏，因为它仍在接收和显示GPS信号;只是这些GPS信号是错误的。然而，如果欺骗的位置明显错误（例如显示船只在陆地上），那么租船人关于GPS故障的论点将更有说服力。此外，如果所有者在船上安装了抗干扰和欺骗技术，并且失败了，那么承租人可以辩称故障与抗干扰设备有关，而不是GPS本身。</p>
+                <p>船东还可以辩称，船舶和船员安全的责任以及航行问题最终由船东承担。</p>
+                <p>然而，停租条款通常被起草为无过错条款，这意味着租船人只需证明情况属于暂停租赁条款的范围。</p>
+                <p>此外，鉴于GPS和AIS不应依赖于视觉和雷达观测，业主也有可能因任何延误而受到批评。在第16/22号伦敦仲裁案中，一艘船舶停电，出于安全原因无法听从租船人的命令。仲裁庭认为，从船上停电之时起，该船就停租了。因此，在主要航行来源仍然存在的情况下，法院或法庭不大可能要求船舶所有人免除赔偿责任。</p>
+                <p>不安全的港口还可能因港口发生干扰或欺骗而引发港口是否安全的争议，特别是在卡塔尔于2025年10月因GPS相关中断而下令暂时暂停船舶航行等情况下（尽管同样的问题可能会出现在任何受GPS干扰影响的港口）。</p>
+                <p>在利兹航运公司诉法国邦格公司[1958] 2劳埃德代表第127号案中，法院认为，“除非特定船舶在相关时间段内能够到达该港口、使用该港口并从该港口返回，在没有发生某种异常事件的情况下，不会面临良好航行和航海技术无法避免的危险，否则港口将不安全”。</p>
+                <p>第一个问题可能是GPS干扰是否属于“异常事件”。在K/S Penta Shipping A/S v Ethiopian Shipping Lines Corp [1992] 2 Lloyd ' s Rep. 545案中，一艘船只在此前停靠港口超过20次后遭到叛乱分子袭击，法院认为这次袭击是一次异常事件，港口并不不安全。如果已知港口受到GPS干扰，那么问题很可能不会被视为异常。</p>
+                <p>另一个问题是，使用良好的航海技术是否可以避免这种危险。</p>
+                <p>在只有GPS有问题的情况下，而港口的雷达和所有其他导航辅助设备仍在运行，很可能可以通过发挥良好的航海技术来避免任何危险。此外，正如蒙罗维亚Kodros Shipping Corp of Monrovia诉Empresa Cubana de Flees [1983] 1 AC中所证实的那样736，安全概念并不是绝对的，如果租船人对任何GPS问题发出足够的警告，港口很可能不会被认为不安全。</p>
+                <p>适航性经典适航性测试在C中提出。Bradley & Sons诉联邦蒸汽航行（1926）24 Ll.L. Rep. 446：“船舶必须具有普通谨慎的船主在考虑到所有可能的情况后要求其船舶在航行开始时具有的适合度。”更具体地说，在The Aquacharm [1982] 1 Lloyd ' s Rep 7中，认为“船舶、船员和设备在各方面均应良好，并能够在预期的航行中遇到和承受海上的普通危险”。如果船东意识到船舶GPS存在问题（或基于航行的潜在问题）并且没有尽职尽责地保护船舶，那么租船人和/或货物利益集团可能会辩称船舶不适航，也许是通过反干扰和/或反欺骗软件。</p>
+                <p>法院曾多次裁定，船员的无能可能导致船只不适航。</p>
+                <p>此类情况包括在计算所需掩体数量时无能（The Makedonia [1962] 1 Lloyd ' s Rep 316），以及由于不熟悉船上消防系统以及安全运输培训不足而无能试图救火（The Eurasian Dream [2002] 1 Lloyd ' s Rep 719）。</p>
+                <p>索赔人还可能依赖管理航行和航海标准的广泛国际公约和法规。例如，《国际海员培训、合格证和值班标准公约》规定：“接任值班时，值班人员应确定船舶的估计或真实位置，并确认其预定的航线、航向和速度，并应注意到值班期间预计会遇到的任何危险。”</p>
+                <p>如果船员过度依赖GPS或AIS，并且无法使用其他方法确定船只的真实位置（即手动修复已知物体或使用ECDIS和雷达叠加图来突出显示通过雷达或桥梁窗口可见陆地时的差异），法院或法庭可能会发现一艘船只不适合通过因干扰或欺骗事件而闻名的区域，由于船员能力不强。</p>
+                <p>相反，如果欺骗不太明显，例如仅将船只移动50米，但仍将其放置在较浅的区域，则法庭可能不太倾向于做出无能的裁决。如果船只因干扰或欺骗而搁浅，租船人（和/或货物利益集团）可以通过声称该船只不适航来寻求辩护因该事件引起的任何共同海难索赔（或确实对遭受的任何损失提出索赔）。值班官员的证据以及为确定船只真实位置而采取的步骤可能至关重要。</p>
+                <p>租船人就上述争议领域的论点是否成功将取决于租船合同的确切措辞和每个案件的具体情况。资料来源：HFW，波罗的海交易所</p>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-logo">成品油资讯</div>
+            <div>国际能源资讯 · 实时追踪</div>
+            <div class="source-link">
+                <div class="source-label">📄 数据来源</div>
+                <div>来源：Hellenic-石油公司</div>
+                <a href="https://www.hellenicshippingnews.com/location-unknown/" target="_blank" rel="noopener">🔗 查看原文</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
